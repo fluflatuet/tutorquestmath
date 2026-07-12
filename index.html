@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorQuest - Math Adventures for Kids</title>
+    <style>
+        :root {
+            --bg-color: #FDF5E6;
+            --card-bg: #FFFFFF;
+            --primary-color: #2196F3;
+            --secondary-color: #FFB74D;
+            --text-color: #3E2723;
+            --muted-text: #757575;
+            --accent-color: #9C27B0;
+            --border-radius: 20px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.4;
+            margin: 0;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+            border: 2px solid white;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin: 0 0 15px 0;
+            padding: 0 10px;
+        }
+
+        .pill-badge {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .links-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 10px;
+        }
+
+        /* Base Link Button Style */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 16px 20px;
+            border-radius: var(--border-radius);
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            box-sizing: border-box;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Primary Action: Google Play Store Button */
+        .btn-playstore {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+            font-size: 1.15rem;
+            padding: 18px 20px;
+            border: none;
+        }
+
+        /* Secondary Action: Parent Guide Manual Link */
+        .btn-manual {
+            background-color: var(--card-bg);
+            color: var(--primary-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            border: 2px solid var(--primary-color);
+        }
+
+        /* Social Network Base Buttons */
+        .btn-social {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 14px 20px;
+        }
+
+        /* Social Icon Alignment Layout */
+        .btn svg {
+            width: 22px;
+            height: 22px;
+            margin-right: 12px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            font-size: 0.8rem;
+            color: var(--muted-text);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <!-- Standard dynamic fallback asset used until your custom icon file is compiled -->
+            <img src="https://fluflatuet.github.io/tutorquestmath/ic_launcher-playstore.png" class="app-icon" alt="TutorQuest Icon">
+            <h1>TutorQuest</h1>
+            <p class="tagline">An offline sanctuary for tactical mathematical discovery.</p>
+            <span class="pill-badge">🔒 Privacy by Design</span>
+        </header>
+
+        <div class="links-wrapper">
+            
+            <!-- Core Download Deep Link -->
+            <a href="https://play.google.com/store/apps/details?id=com.filadendron.tutorquestmath" class="btn btn-playstore">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3.609 1.814L13.783 12 3.609 22.186c-.183.183-.347.116-.364-.142V1.956c.017-.258.181-.325.364-.142zm11.232 9.135l2.614-1.51c.456-.263.456-.693 0-.956l-2.614-1.51-1.353 1.354 1.353 1.622zm-2.112.793L11.376 13.1l2.529 3.033 2.614-1.511c.456-.263.456-.693 0-.956l-2.614-1.511-1.176.587zm.304-1.484l1.353-1.622-3.155-1.821-1.921 1.921 3.723 1.522z"/>
+                </svg>
+                Get it on Google Play
+            </a>
+
+            <!-- Embedded Parent Guide Route -->
+            <a href="manual.html" class="btn btn-manual">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                </svg>
+                Read Parent Guide & Manual
+            </a>
+
+            <!-- Social Media Routing Sub-Tier -->
+            <a href="https://www.tiktok.com/@filadendron22?_r=1&_t=ZN-97yBNgE7j78" target="_blank" rel="noopener" class="btn btn-social">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.64 4.16 1.02.97 2.34 1.53 3.71 1.64V9.3c-1.32-.07-2.62-.5-3.72-1.25-.56-.4-1.05-.89-1.45-1.45v7.43c.03 1.96-.53 3.89-1.68 5.4-1.43 1.76-3.64 2.81-5.93 2.82-2.82.01-5.45-1.51-6.84-3.97-1.45-2.45-1.38-5.56.17-7.94 1.41-2.26 3.93-3.6 6.59-3.59.1 0 .2 0 .3.01v3.83c-.87-.13-1.77.08-2.48.6-.83.56-1.34 1.49-1.37 2.49-.04 1.34.88 2.56 2.19 2.87 1.04.28 2.17-.11 2.76-.99.39-.56.59-1.24.57-1.92V.02z"/>
+                </svg>
+                Follow on TikTok
+            </a>
+
+            <a href="https://www.instagram.com/filadendrondev?igsh=MXh0am4ybzBkNjlxNQ==" target="_blank" rel="noopener" class="btn btn-social">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+                Connect on Instagram
+            </a>
+
+            <a href="https://youtube.com/@adrianjezler6514?si=ceBnoDU6ppTz_rm4" target="_blank" rel="noopener" class="btn btn-social">
+                <svg viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+                Subscribe on YouTube
+            </a>
+
+        </div>
+
+        <footer>
+            &copy; 2026 Filadendron &bull; TutorQuest: Math
+        </footer>
+
+    </div>
+
+</body>
+</html>
